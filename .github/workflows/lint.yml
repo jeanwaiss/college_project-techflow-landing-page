@@ -16,4 +16,4 @@ jobs:
           python-version: '3.9'
 
       - name: Run basic test
-        run: py tests/test_basic.py
+        run: python tests/test_basic.py
