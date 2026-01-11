@@ -1,17 +1,143 @@
 <!DOCTYPE html>
-<html>
-<head>...</head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow Solutions - Sistema Ágil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <header>...</header>
-    <!-- Conteúdo aqui -->
-    <footer>...</footer>
-    <section id="contact">
-    <h3>Entre em contato</h3>
-    <form id="contact-form">
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" rows="4" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+    <!-- TELA DE LOGIN -->
+    <div id="login-screen" class="screen">
+        <div class="login-card">
+            <div class="logo-3d">
+                <i class="fas fa-tasks"></i>
+                <h1>TechFlow Solutions</h1>
+            </div>
+            <p class="subtitle">Sistema de Gestão Ágil de Tarefas</p>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Seu nome" id="name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Seu e-mail" id="email" required>
+                </div>
+                <button type="submit" class="btn-3d">
+                    <i class="fas fa-sign-in-alt"></i> Acessar Dashboard
+                </button>
+            </form>
+            <p class="hint">* Dados simulados para demonstração</p>
+        </div>
+    </div>
+
+    <!-- DASHBOARD (inicialmente oculto) -->
+    <div id="dashboard" class="screen" style="display: none;">
+        <div class="dashboard-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar-3d">
+                <div class="logo-3d">
+                    <i class="fas fa-tasks"></i>
+                    <h2>TechFlow</h2>
+                </div>
+                <nav>
+                    <a href="#" class="nav-item active">
+                        <i class="fas fa-home"></i> Dashboard
+                    </a>
+                    <a href="https://github.com/users/jeanwaiss/projects/1" target="_blank" class="nav-item">
+    <i class="fas fa-columns"></i> Kanban (GitHub)
+</a>
+                    </a>
+                    <a href="https://github.com/jeanwaiss/College_project-techflow-landing-page/actions" target="_blank" class="nav-item">
+                        <i class="fas fa-play-circle"></i> GitHub Actions
+                    </a>
+                    <a href="https://github.com/jeanwaiss/College_project-techflow-landing-page" target="_blank" class="nav-item">
+                        <i class="fas fa-code-branch"></i> Repositório
+                    </a>
+                </nav>
+                <div class="user-info">
+                    <img src="https://ui-avatars.com/api/?name=Usuario+Agil&background=3498db&color=fff&size=100" alt="Avatar" class="avatar-3d">
+                    <span id="user-name">Usuário</span>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <header class="header-3d">
+                    <h1><i class="fas fa-chart-line"></i> Dashboard Ágil</h1>
+                    <button class="btn-3d" onclick="alert('Nova tarefa criada no backlog!')">
+                        <i class="fas fa-plus"></i> Nova Tarefa
+                    </button>
+                </header>
+
+                <!-- Stats Cards -->
+                <section class="stats-grid">
+                    <div class stat-card-3d>
+                        <h3><i class="fas fa-list-ul"></i> Tarefas Totais</h3>
+                        <p class="number">24</p>
+                        <p class="trend"><i class="fas fa-arrow-up"></i> +5 esta semana</p>
+                    </div>
+                    <div class stat-card-3d>
+                        <h3><i class="fas fa-spinner"></i> Em Progresso</h3>
+                        <p class="number">8</p>
+                        <p class="trend"><i class="fas fa-arrow-right"></i> Estável</p>
+                    </div>
+                    <div class stat-card-3d>
+                        <h3><i class="fas fa-check-circle"></i> Concluídas</h3>
+                        <p class="number">12</p>
+                        <p class="trend"><i class="fas fa-arrow-up"></i> +3 hoje</p>
+                    </div>
+                    <div class stat-card-3d>
+                        <h3><i class="fas fa-clock"></i> Atrasadas</h3>
+                        <p class="number">4</p>
+                        <p class="trend"><i class="fas fa-arrow-down"></i> -2 esta semana</p>
+                    </div>
+                </section>
+
+                <!-- Kanban Preview -->
+                <section class="kanban-section-3d">
+                    <h2><i class="fas fa-columns"></i> Quadro Kanban (GitHub Projects)</h2>
+                    <p>Clique em <strong>"Kanban (GitHub)"</strong> na barra lateral para acessar o quadro real.</p>
+                    <div class="kanban-3d">
+                        <div class="kanban-column">
+                            <h3><span class="column-title">A Fazer</span> <span class="badge">5</span></h3>
+                            <div class="task-3d">Implementar login</div>
+                            <div class="task-3d">Criar API de tarefas</div>
+                            <div class="task-3d">Documentar sprint</div>
+                        </div>
+                        <div class="kanban-column">
+                            <h3><span class="column-title">Em Progresso</span> <span class="badge">3</span></h3>
+                            <div class="task-3d">Dashboard responsivo</div>
+                            <div class="task-3d">Testes automatizados</div>
+                        </div>
+                        <div class="kanban-column">
+                            <h3><span class="column-title">Concluído</span> <span class="badge">12</span></h3>
+                            <div class="task-3d">Configurar GitHub Actions</div>
+                            <div class="task-3d">Criar repositório</div>
+                            <div class="task-3d">Landing page inicial</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CI Status -->
+                <section class="ci-card-3d">
+                    <h3><i class="fas fa-play-circle"></i> GitHub Actions CI/CD</h3>
+                    <p>Status atual: <span class="ci-pass"><i class="fas fa-check-circle"></i> Passando</span></p>
+                    <p>Última execução: há 2 minutos</p>
+                    <button class="btn-3d-small" onclick="window.open('https://github.com/jeanwaiss/College_project-techflow-landing-page/actions', '_blank')">
+                        Ver Pipeline
+                    </button>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
