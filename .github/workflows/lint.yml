@@ -17,3 +17,4 @@ jobs:
 
       - name: Run basic test
         run: python tests/test_basic.py
+        # CI configurado para testes automatizados - Fecha Issue #9
