@@ -22,3 +22,14 @@ Será utilizada uma abordagem ágil híbrida (Scrum + Kanban), com quadro de tar
 
 ## Contato
 Seu nome - jeanwaiss@hotmail.com
+
+## Mudança de Escopo
+
+Durante o desenvolvimento, o cliente solicitou a inclusão de um formulário de contato na landing page para capturar leads.  
+A alteração foi implementada em [11/01/2026] e inclui:
+
+- Nova seção "Entre em contato" com formulário funcional
+- Validação básica de campos (e-mail e mensagem obrigatórios)
+- Estilização consistente com o design original
+
+Essa mudança foi gerenciada através do quadro Kanban no GitHub Projects, com a criação de uma nova issue (#10) e movimentação do card correspondente.
