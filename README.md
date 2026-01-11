@@ -33,3 +33,6 @@ A alteração foi implementada em [11/01/2026] e inclui:
 - Estilização consistente com o design original
 
 Essa mudança foi gerenciada através do quadro Kanban no GitHub Projects, com a criação de uma nova issue (#10) e movimentação do card correspondente.
+
+## Issue #10 – Formulário de Contato
+Implementado em [11/01/2026] como parte da mudança de escopo solicitada pelo cliente para deixar registrado a ação de fechamento de issue no github.
